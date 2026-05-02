@@ -1,0 +1,82 @@
+node_modules
+dist
+
+# Local environment files (keep secrets off version control)
+.env
+.env.production
+.env.local
+.env.*.local
+.vscode
+.DS_Store
+src-tauri/target
+.dev-data
+.dev-all.stdout.log
+.dev-all.stderr.log
+server/**/.auth-data.json
+server/**/.cloud-browser-data.json
+server/**/.cloud-browser-execution-queue.json
+server/**/.google-accounts-data.json
+server/**/.sending-data.json
+server/**/.sending-queue.json
+server/**/.calendar-invite-data.json
+server/**/.calendar-invite-queue.json
+server/**/*.tmp.*
+
+# Local IDE / tooling
+.vs/
+
+# Local proof / wave logs
+.wave*.log
+verify-wave*.log
+build.output.txt
+
+# Dev supervisor logs
+.dev-*.stdout.log
+.dev-*.stderr.log
+.dev-*.log
+.test-run.*.log
+
+# Local exports / reports
+export-*.csv
+reports/
+
+# Local PowerShell distribution (not part of app runtime)
+PowerShell-7.6.0-win-x64/
+
+# Sending runtime pilot artifacts
+server/**/.sending-execution-nodes.json
+server/**/.sending-provider-pools.json
+
+# Tool installations (Go, PowerShell, etc.)
+.tools/
+.tools
+
+# Generated production secrets — NEVER commit real secrets
+deploy/production/env/*.generated.env
+deploy/production/env/control-os.generated.env
+
+# Build output artifacts / installer drops
+*.exe
+*.msi
+smoke-output.txt
+test-output.txt
+
+# Editor state
+.cursor/
+
+# PowerShell scripts
+*.ps1
+scripts/**/*.ps1
+!scripts/git-auto-sync.ps1
+VSCodeUserSetup-*.exe
+
+# Local machine artifacts / accidental drops
+local.settings.json
+blackbox_mcp_settings.json
+Mozilla-Recovery-Key_*.pdf
+dotnet-sdk-*.exe
+.continue/agents/new-config.yaml
+.continue/prompts/new-prompt.md
+.continue/prompts/Attached Element Context from Integrated.txt
+# Shadow workspace accidentally created inside .continue/prompts — never track
+/.continue/prompts/N workspace/
